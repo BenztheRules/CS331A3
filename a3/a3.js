@@ -5,8 +5,14 @@ if ( ! exports )
    var exports = [ ];
 
 var insert = function (value,tree) {
-    if(fp.isNull(tree)){
-        return fp.cons(value, tree);
+    if(bt.isEmpty(tree)){
+        return bt.makeTree(value, [], []);
+    }else{
+        if(bt.isLeaf(tree)){
+            if(fp.isLT(value, bt.root(tree))){
+                return 
+            }
+        }
     }
 }
 
