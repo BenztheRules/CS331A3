@@ -10,7 +10,7 @@ var insert = function (value,tree) {
     }else{
         if(bt.isLeaf(tree)){
             if(fp.isLT(value, bt.root(tree))){
-                return 
+                return shit
             }
         }
     }
